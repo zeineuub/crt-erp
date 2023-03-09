@@ -1,8 +1,8 @@
 # crt-erp
-Le Croissant Rouge est une organisation humanitaire qui fournit une aide d'urgence et des services de santé à travers le monde. L'utilisation d'un ERP (Enterprise Resource Planning) pour gérer les activités du Croissant Rouge est devenue essentielle pour assurer une efficacité opérationnelle optimale.
+The Red Crescent is a humanitarian organization that provides emergency aid and health services worldwide. The use of an ERP (Enterprise Resource Planning) to manage the activities of the Red Crescent has become essential to ensure optimal operational efficiency.
 
-Les modules de gestion des volontaires et des stocks sont particulièrement importants pour le Croissant Rouge, car ils sont directement liés à sa capacité à répondre rapidement et efficacement en cas de catastrophe naturelle ou de crise humanitaire.
+The volunteer and stock management modules are particularly important for the Red Crescent, as they are directly related to its ability to respond quickly and efficiently in the event of a natural disaster or humanitarian crisis.
 
-La gestion des volontaires via un module ERP permet de gérer les informations des bénévoles, leurs compétences et leurs disponibilités pour les assigner aux missions appropriées. Cela facilite également la communication entre les équipes de bénévoles et les responsables, permettant une coordination plus fluide lors des interventions.
+Managing volunteers through an ERP module allows for the management of volunteer information, skills, and availability to assign them to appropriate missions. This also facilitates communication between volunteer teams and managers, enabling smoother coordination during interventions.
 
-De même, un module de gestion des stocks permet de suivre efficacement les stocks de nourriture, de médicaments et d'autres fournitures essentielles pour répondre aux besoins des personnes touchées par une catastrophe. La gestion précise des stocks permet également d'éviter le gaspillage et d'optimiser les ressources pour une meilleure efficacité opérationnelle.
+Similarly, a stock management module allows for efficient tracking of food, medicine, and other essential supplies to meet the needs of people affected by a disaster. Accurate inventory management also helps to avoid waste and optimize resources for better operational efficiency.
