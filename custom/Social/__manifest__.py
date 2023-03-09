@@ -6,7 +6,8 @@
     'depends': ['base'],
     'category': 'Social',
     'data': [
-        '/home/ghada/PycharmProjects/odoo16/custom/Social/views/social.xml',
+        'views/social.xml',
+        'security/ir.model.access.csv'
     ],
     'summary': 'this module add, update and delete social stock',
     'license': 'LGPL-3',

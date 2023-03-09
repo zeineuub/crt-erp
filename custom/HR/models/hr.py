@@ -32,7 +32,7 @@ class HR(models.Model):
         ('male', 'Male'),
         ('female', 'Female'),
     ]
-    gender = fields.Selection(GENDER_SELECTION, widget='radio',)
+    gender = fields.Selection(GENDER_SELECTION, widget='radio_button')
 
     phoneNumber = fields.Char(required=True,size=8, index=True)
     @api.constrains('phoneNumber')

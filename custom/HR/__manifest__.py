@@ -6,7 +6,9 @@
     'depends': ['base'],
     'category': 'Humain Resources',
     'data': [
-        '/home/ghada/PycharmProjects/odoo16/custom/HR/views/hr.xml',
+        'views/hr.xml',
+        'security/ir.model.access.csv'
+
     ],
     'summary': 'this module add, update and delete volunteers',
     'license': 'LGPL-3',
