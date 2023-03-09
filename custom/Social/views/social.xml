@@ -1,0 +1,161 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="stock_management_form_view">
+      <field name="name">stock.management.form</field>
+      <field name="model">stock.management</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="Date"/>
+               <field name="Pate"/>
+              <field name="Couscous"/>
+              <field name="Soup_unity" widget="selection" options="{'selection': [
+                    ('250g', '250g'),
+                    ('500g', '500g'),
+                    ('1kg', '1kg')]}"
+              />
+             <field name="Soup_quantity"/>
+              <field name="Tomato_unity" widget="selection" options="{'selection': [
+                     ('500g', '500g'),
+                     ('1kg', '1kg')]}"
+              />
+                <field name="Tomato_quantity" />
+              <field name="Oil_unity" widget="selection" options="{'selection': [
+                    ('1L', '1L'),
+                    ('1.8L', '1.8L'),
+                    ('3L', '3L'),
+                    ('5L', '5L')]}"
+              />
+                <field name="Oil_quantity"></field>
+              <field name="Milk"/>
+              <field name="Harissa_unity" widget="selection" options="{'selection': [
+                    ('70g', '70g'),
+                    ('150g', '150g'),
+                    ('500g', '500g')]}"
+              />
+                <field name="Harissa_quantity" />
+              <field name="Malsouka"/>
+              <field name="Sugar"/>
+              <field name="Rice"/>
+              <field name="Jam"/>
+              <field name="Coffee_unity" widget="selection" options="{'selection': [
+                    ('100g', '100g'),
+                    ('150g', '150g'),
+                    ('200g', '200g'),
+                    ('250g', '250g'),
+                    ('500g', '500g'),
+                    ('1kg', '1kg')]}"
+              />
+                <field name="Coffee_quantity"></field>
+              <field name="Tea_unity"  widget="selection" options="{'selection': [
+                    ('100g', '100g'),
+                    ('150g', '150g'),
+                    ('200g', '200g'),
+                    ('250g', '250g'),
+                    ('500g', '500g'),
+                    ('1kg', '1kg')]}"
+              />
+                <field name="Tea_quantity" />
+              <field name="Tuna_unity"  widget="selection" options="{'selection': [
+                    ('65g', '650g'),
+                    ('160g', '160g'),
+                    ('260g', '260g'),
+                    ('400g', '400g')]}"
+              />
+                <field name="Tuna_quantity" />
+              <field name="EggTray"/>
+              <field name="Cheese_unity" widget="selection" options="{'selection': [
+                    ('8g', '8g'),
+                    ('16g', '16g'),
+                    ('24g', '24g')]}"
+              />
+                <field name="Cheese_quantity"/>
+                <field name="Salt"/>
+              <field name="Chameya_unity" widget="selection" options="{'selection': [
+                    ('200g', '200g'),
+                    ('350g', '350g')]}"
+              />
+              <field name="Chameya_quantity"/>
+              <field name="Chocoline"/>
+              <field name="Cream"/>
+              <field name="Soda_unity" widget="selection" options="{'selection': [
+                     ('1L', '1L'),
+                    ('1.5L', '1.5L'),
+                    ('2L', '2L')]}"
+              />
+                <field name="Soda_quantity"/>
+            </group>
+          </sheet>
+          <footer>
+            <button string="Add" name="add_stock" type="object" class="btn-primary"/>
+            <button string="Save" name="save_stock" type="object" class="btn-primary"/>
+            <button string="Cancel" special="cancel" class="btn-secondary"/>
+            <button string="Delete" name="delete_stock" type="object" class="btn-danger" attrs="{'invisible': [('id', '=', False)]}"                                                                                                                                                                                          />
+          </footer>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="stock_management_tree_view">
+      <field name="name">stock.management.tree</field>
+      <field name="model">stock.management</field>
+      <field name="arch" type="xml">
+        <tree>
+              <field name="Date"/>
+              <field name="Pate"/>
+              <field name="Couscous"/>
+            <field name="Soup_unity"/>
+              <field name="Soup_quantity"/>
+
+            <field name="Tomato_unity"/>
+              <field name="Tomato_quantity"/>
+
+            <field name="Oil_unity"/>
+              <field name="Oil_quantity"/>
+
+              <field name="Milk"/>
+
+              <field name="Harissa_unity"/>
+            <field name="Harissa_quantity"/>
+              <field name="Malsouka"/>
+              <field name="Sugar"/>
+              <field name="Rice"/>
+              <field name="Jam"/>
+              <field name="Coffee_quantity"/>
+            <field name="Coffee_unity"/>
+              <field name="Tea_unity"/>
+              <field name="Tea_quantity"/>
+
+              <field name="Tuna_unity"/>
+            <field name="Tuna_quantity"/>
+              <field name="EggTray"/>
+
+              <field name="Cheese_unity"/>
+            <field name="Cheese_quantity"/>
+              <field name="Salt"/>
+
+              <field name="Chameya_unity"/>
+            <field name="Chameya_quantity"/>
+              <field name="Chocoline"/>
+              <field name="Cream"/>
+
+              <field name="Soda_unity"/>
+            <field name="Soda_quantity"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="stock_model_action">
+      <field name="name">Stock Management</field>
+      <field name="res_model">stock.management</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Click here to create a new stock record
+        </p>
+      </field>
+    </record>
+
+    <menuitem id="stock_management_menu" name="Stock Management"  action="stock_model_action" sequence="3"/>
+  </data>
+</odoo>
